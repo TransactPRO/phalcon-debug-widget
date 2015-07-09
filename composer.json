@@ -12,5 +12,6 @@
             "PDW\\": "src/"
         }
     },
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
