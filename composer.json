@@ -1,0 +1,16 @@
+{
+    "name": "transactpro/phalcon-debug-widget",
+    "description": "Very simple to install Debug Toolbar Widget for Phalcon framework.",
+    "authors": [
+        {
+            "name": "Vitalijs Litvinovs",
+            "email": "vl@tpro.lv"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PDW\\": "src/"
+        }
+    },
+    "require": {}
+}
