@@ -49,10 +49,17 @@
 			</tr>
 			<?php
 				foreach($descriptors as $k=>$v):
-					echo "<tr>";
-						echo "<td>{$k}</td>";
-						echo "<td>{$v}</td>";
-					echo "</tr>";
+                    if($k == 'password'){
+                        echo "<tr>";
+                        echo "<td>{$k}</td>";
+                        echo "<td>******</td>";
+                        echo "</tr>";
+                    }else {
+                        echo "<tr>";
+                        echo "<td>{$k}</td>";
+                        echo "<td>{$v}</td>";
+                        echo "</tr>";
+                    }
 				endforeach;
 			?>
 			</tbody>
