@@ -1,4 +1,4 @@
-Phalcon Debug Widget (PDW) (2.0.* complatible)
+Phalcon Debug Widget (2.0.* complatible)
 ===
 Note (How it works):
 =====
