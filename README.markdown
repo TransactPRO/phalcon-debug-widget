@@ -18,8 +18,11 @@ If it looks familiar, its because its modeled after the [Yii debug toolbar](http
 
 ## Installation
 
-Copy the main PDW folder into your project where you keep third-party libraries.
-For example (app/library or app/vendor or /vendor). Copy or move the pdw-assets folder to your public folder.
+```json
+"require": {
+	"transactpro/phalcon-debug-widget": "~1.0"
+}
+```
 
 ## Usage and Configuration
 
@@ -31,13 +34,13 @@ Define a debug or environment flag in your main index.php file so you can easily
 defined('PHALCONDEBUG') || define('PHALCONDEBUG', true);
 ```
 
-After you have setup your \Phalcon\Loader and \Phalcon\DI\FactoryDefault() create a new instance of the debug widget. Here we will tell phalcon about the PDW namespace and instantiate the widget with the $di. (Assuming $di is your dependency injector and $loader is your \Phalcon\Loader)
+Add these lines to your index.php file before you handle application.
 ```php
-if (PHALCONDEBUG == true) {
-	$namespaces = array_merge($loader->getNamespaces(), array('PDW'=>realpath('/path/to/PDW')));
-	$loader->registerNamespaces($namespaces);
+if (PHALCONDEBUG) {
 	$debugWidget = new \PDW\DebugWidget($di);
 }
+
+echo $application->handle()->getContent();
 ```
 
 
