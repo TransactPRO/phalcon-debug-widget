@@ -1,7 +1,7 @@
 Phalcon Debug Widget (2.0.* complatible)
 ===
-[![Latest Version](https://img.shields.io/packagist/v/transactpro/phalcon-translate.svg?style=flat-square)](https://github.com/transactpro/phalcon-translate/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/transactpro/phalcon-translate.svg?style=flat-square)](https://packagist.org/packages/transactpro/phalcon-translate)
+[![Latest Version](https://img.shields.io/packagist/v/transactpro/phalcon-debug-widget.svg?style=flat-square)](https://github.com/transactpro/phalcon-debug-widget/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/transactpro/phalcon-debug-widget.svg?style=flat-square)](https://packagist.org/packages/transactpro/phalcon-debug-widget)
 
 Note (How it works):
 =====
