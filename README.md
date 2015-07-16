@@ -49,7 +49,18 @@ echo $application->handle()->getContent();
 
 ## Preview
 
-![](/preview.png)
+### Server
+![](/server-info.png)
+
+### Request
+![](/request-info.png)
+
+### Views
+![](/views-info.png)
+
+### Database
+![](/database-info.png)
+
 
 ## Attribution:
 
