@@ -1,4 +1,4 @@
-Phalcon Debug Widget (2.0.* complatible)
+Phalcon Debug Widget
 ===
 [![Latest Version](https://img.shields.io/packagist/v/transactpro/phalcon-debug-widget.svg?style=flat-square)](https://github.com/transactpro/phalcon-debug-widget/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/transactpro/phalcon-debug-widget.svg?style=flat-square)](https://packagist.org/packages/transactpro/phalcon-debug-widget)
@@ -31,7 +31,7 @@ If it looks familiar, its because its modeled after the [Yii debug toolbar](http
 
 
 
-Define a debug or environment flag in your main index.php file so you can easily disable the Phalcon Debug Widget on production environments. Example:
+Define a debug or environment flag in your main index.php (or config.php) file so you can easily disable the Phalcon Debug Widget on production environments. Example:
 
 ```php
 defined('PHALCONDEBUG') || define('PHALCONDEBUG', true);
@@ -41,6 +41,26 @@ Add these lines to your index.php file before you handle application.
 ```php
 if (PHALCONDEBUG) {
 	$debugWidget = new \PDW\DebugWidget($di);
+}
+
+echo $application->handle()->getContent();
+```
+
+Or you can specify your custom list of providers and panels:
+```php
+if (PHALCONDEBUG) {
+    $debugWidget = new \PDW\DebugWidget($di, [
+        'db'          => ['db'],
+        'dispatch'    => ['dispatcher'],
+        'view'        => ['view'],
+        'apiProvider' => ['apiProvider']
+    ], [
+        'server',
+        'request',
+        'views',
+        'db',
+        'api'
+    ]);
 }
 
 echo $application->handle()->getContent();
@@ -60,6 +80,8 @@ echo $application->handle()->getContent();
 
 ### Database
 ![](/database-info.png)
+
+### Api calls
 
 
 ## Attribution:
