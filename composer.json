@@ -1,7 +1,7 @@
 {
     "name": "transactpro/phalcon-debug-widget",
     "description": "Very simple to install Debug Toolbar Widget for Phalcon framework.",
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Vitalijs Litvinovs",
