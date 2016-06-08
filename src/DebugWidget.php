@@ -8,7 +8,6 @@ use Phalcon\Di;
 use Phalcon\DiInterface;
 use Phalcon\Escaper as Escaper;
 use Phalcon\Events\Event;
-use Phalcon\Mvc\Url as URL;
 use Phalcon\Mvc\View as View;
 
 class DebugWidget implements \Phalcon\DI\InjectionAwareInterface
