@@ -245,8 +245,6 @@ class DebugWidget implements \Phalcon\DI\InjectionAwareInterface
     {
         $this->endTime = microtime(true);
         $content = $view->getContent();
-        //		$scripts = $this->getInsertScripts();
-        //		$scripts .= "</head>";
         $scripts = "</head>";
         $content = str_replace("</head>", $scripts, $content);
         $rendered = $this->renderToolbar();
